@@ -209,7 +209,7 @@ a {
 .app-container {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 50px 20px;
+  padding: 50px 20px 120px 20px; /* Added 120px bottom padding to give space for fixed bottom footer! */
   display: flex;
   flex-direction: column;
   gap: 35px;
@@ -1035,29 +1035,37 @@ a {
 }
 
 /* ==========================================================================
-   Footer Cartoon Styling
+   Footer Cartoon Styling (Bottom-Docked Fixed Panel)
    ========================================================================== */
 .app-footer {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 40px); /* Account for container's 20px horizontal padding on smaller screens */
+  max-width: 1060px; /* 1100px container max-width minus 40px container horizontal padding */
+  z-index: 1000;
   margin-top: 50px;
-  margin-bottom: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 16px 24px;
-  border-radius: 16px;
+  border-radius: 16px 16px 0 0;
   font-size: 14px;
   font-weight: 600;
   border: var(--cartoon-border-thin);
-  box-shadow: var(--cartoon-shadow-sm);
+  border-bottom: none;
+  box-shadow: 0px -4px 0px #1e1e1e;
   background: #ffffff;
   flex-wrap: wrap;
   gap: 15px;
+  box-sizing: border-box;
   transition: var(--transition-bounce);
 }
 
 .app-footer:hover {
-  transform: translate(-2px, -2px);
-  box-shadow: var(--cartoon-shadow);
+  transform: translate(-50%, -2px);
+  box-shadow: 0px -6px 0px #1e1e1e;
 }
 
 .footer-left {
