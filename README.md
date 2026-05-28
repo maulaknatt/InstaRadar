@@ -96,4 +96,4 @@ Website ini **TIDAK MENGGUNAKAN BACKEND ATAU DATABASE**.
 Proyek ini dilindungi oleh lisensi **MIT**. Silakan gunakan, pelajari, dan kembangkan secara bebas!
 
 ---
-<p align="center">Dibuat dengan 💖 dan garis hitam tebal oleh <b>InstaRadar Team</b></p>
+<p align="center">Dibuat dengan Maulana Bagus  <b>InstaRadar</b></p>
