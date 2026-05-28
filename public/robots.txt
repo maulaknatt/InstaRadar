@@ -1,0 +1,6 @@
+# robots.txt untuk InstaRadar
+User-agent: *
+Allow: /
+
+# Sitemap link
+Sitemap: https://cek-unfoll-ig.vercel.app/sitemap.xml
