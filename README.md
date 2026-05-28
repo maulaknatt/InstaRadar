@@ -16,18 +16,6 @@ Aplikasi ini menggunakan pendekatan **100% Client-Side Parsing**, artinya seluru
 
 ### 🔗 [Coba Demo Live Sekarang di Vercel!](https://cek-unfoll-ig.vercel.app/)
 
----
-
-## 🎨 Konsep Desain: Retro Cartoon / Neobrutalism
-
-Untuk memberikan kesan kustom yang kuat, kami meninggalkan desain "AI template standar" (gelap & bercahaya) dan mengadopsi gaya **Retro Cartoon / Neobrutalism (Comic Style)** yang sangat interaktif dan memanjakan mata:
-* **Comic Dotted Grid Background**: Pola kisi-kisi titik komik dengan dasar krem hangat (`#fffceb`).
-* **Fredoka Rounded Typography**: Huruf bulat komik premium yang bersahabat dan modern.
-* **Thick Solid Borders & Flat Shadows**: Bingkai luar hitam setebal `3.5px` dengan bayangan 3D datar (`box-shadow: 6px 6px 0px #1e1e1e`).
-* **Playful Squish Animations**: Tombol-tombol interaktif yang membal memuaskan saat diklik (active squish).
-
----
-
 ## ✨ Fitur Unggulan
 
 * 🛡️ **Aman 100% (Tanpa Login Password)**: Menggunakan file resmi `followers_1.json` dan `following.json` hasil unduhan resmi Anda di Meta Accounts Center.

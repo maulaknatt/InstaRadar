@@ -1033,3 +1033,74 @@ a {
     transform: translateY(-8px);
   }
 }
+
+/* ==========================================================================
+   Footer Cartoon Styling
+   ========================================================================== */
+.app-footer {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  border-radius: 16px;
+  font-size: 14px;
+  font-weight: 600;
+  border: var(--cartoon-border-thin);
+  box-shadow: var(--cartoon-shadow-sm);
+  background: #ffffff;
+  flex-wrap: wrap;
+  gap: 15px;
+  transition: var(--transition-bounce);
+}
+
+.app-footer:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: var(--cartoon-shadow);
+}
+
+.footer-left {
+  color: var(--text-primary);
+}
+
+.footer-left strong {
+  font-weight: 700;
+}
+
+.footer-right .github-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--color-yellow);
+  border: var(--cartoon-border-thin);
+  padding: 8px 14px;
+  border-radius: 10px;
+  box-shadow: 2.5px 2.5px 0px #1e1e1e;
+  transition: var(--transition-bounce);
+  color: var(--text-primary);
+  font-weight: 700;
+  font-size: 13.5px;
+}
+
+.footer-right .github-link:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 3.5px 3.5px 0px #1e1e1e;
+  background: #ffe380;
+}
+
+.footer-right .github-link:active {
+  transform: translate(1px, 1px);
+  box-shadow: 1px 1px 0px #1e1e1e;
+}
+
+.github-icon {
+  flex-shrink: 0;
+}
+
+@media (max-width: 480px) {
+  .app-footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+}
