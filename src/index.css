@@ -1035,14 +1035,11 @@ a {
 }
 
 /* ==========================================================================
-   Footer Cartoon Styling (Sticky & Floating)
+   Footer Cartoon Styling
    ========================================================================== */
 .app-footer {
-  position: sticky;
-  bottom: 24px;
-  z-index: 50;
   margin-top: 50px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
