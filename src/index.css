@@ -556,6 +556,39 @@ a {
   color: var(--color-pink);
 }
 
+/* Instagram Deep Link Action Buttons */
+.step-action-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.btn-sm {
+  padding: 8px 16px;
+  font-size: 13px;
+  border-radius: 8px;
+}
+
+.btn-instagram-app {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+  color: #ffffff !important;
+  border: var(--cartoon-border);
+  box-shadow: var(--cartoon-shadow-sm);
+}
+
+.btn-instagram-app:hover {
+  background: radial-gradient(circle at 30% 107%, #fef6a7 0%, #fef6a7 5%, #fe6a5b 45%, #e034ac 60%, #396bf2 90%);
+  color: #ffffff !important;
+  transform: translate(-2px, -2px);
+  box-shadow: var(--cartoon-shadow);
+}
+
+.btn-instagram-app:active {
+  transform: translate(2px, 2px);
+  box-shadow: var(--cartoon-shadow-active);
+}
+
 /* ==========================================================================
    Dashboard & Analytics Stats
    ========================================================================== */

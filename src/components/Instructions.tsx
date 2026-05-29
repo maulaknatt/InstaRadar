@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { HelpCircle, ChevronDown, ChevronUp, ShieldAlert, Download, Settings, FileJson, CheckCircle2 } from 'lucide-react';
+import { HelpCircle, ChevronDown, ChevronUp, ShieldAlert, Download, Settings, FileJson, CheckCircle2, Smartphone, Globe } from 'lucide-react';
 
 export default function Instructions() {
   const [isOpen, setIsOpen] = useState(false);
@@ -86,6 +86,26 @@ export default function Instructions() {
                             .replace(/\n/g, '<br />')
                         }} 
                       />
+                      {idx === 0 && (
+                        <div className="step-action-buttons">
+                          <a 
+                            href="instagram://settings" 
+                            className="btn btn-instagram-app btn-sm"
+                          >
+                            <Smartphone size={16} />
+                            <span>Buka di Aplikasi Instagram (HP)</span>
+                          </a>
+                          <a 
+                            href="https://accountscenter.instagram.com/" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="btn btn-secondary btn-sm"
+                          >
+                            <Globe size={16} />
+                            <span>Buka di Browser</span>
+                          </a>
+                        </div>
+                      )}
                     </div>
                   )}
                 </div>
